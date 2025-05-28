@@ -16,11 +16,11 @@ const Navbar = () => {
   return (
     <nav className="border-2 border-black-500 flexBetween padding-container relative z-30 py-5">
       <Link href="/">
-        <Image src="/global_volunteer_horizontal_color.png" alt="logo" width={200} height={100} />
+        <Image src="/aiesec_in_iit_colored_logo.png" alt="logo" width={100} height={50} className="pl-4"/>
       </Link>
 
       {/* Desktop Nav */}
-      <ul className="hidden h-full gap-12 lg:flex">
+      <ul className="hidden h-full gap-12 lg:flex pr-5 ">
         {NAV_BAR_LINKS.map((link) => (
           <Link
             href={link.href}
