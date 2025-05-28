@@ -34,7 +34,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Button */}
       <Image
-        src="/menu.svg"
+        src="/menu.png"
         alt="menu"
         width={32}
         height={32}
