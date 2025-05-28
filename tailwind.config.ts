@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+       minHeight: {
+        'screen-nav': 'calc(100svh - 80px)', // use based on your navbar height
+      },
       colors: {
         green: {
           50: '#30AF5B',
