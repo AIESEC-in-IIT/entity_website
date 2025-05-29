@@ -10,14 +10,13 @@ module.exports = {
        minHeight: {
         'screen-nav': 'calc(100svh - 80px)', // use based on your navbar height
       },
-      colors: {
+      colors: {     
         'aiesec-blue': '#037EF3',
         'ogv-orange': '#F85A40',
         'ogt-cyan': '#0CB9C1',
         'ogte-yellow': '#F48924',
         'aiesec-light-grey': '#f5f5f5',
-        'aiesec-dark-grey': '#52565E',
-        
+        'aiesec-dark-grey': '#52565E',   
         green: {
           50: '#30AF5B',
           90: '#292C27',
