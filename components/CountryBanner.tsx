@@ -6,7 +6,7 @@ const CountryBanner = () => {
   const containerRef = useRef(null)
   const [duration, setDuration] = useState(30) // default fallback duration
 
-  const countries = {
+  const country_flags = {
     "India": "https://flagcdn.com/h80/in.png",
     "Nepal": "https://flagcdn.com/h80/np.png",
     "Malaysia": "https://flagcdn.com/h80/my.png",
@@ -19,10 +19,13 @@ const CountryBanner = () => {
     "Italy": "https://flagcdn.com/h80/it.png",
     "Cambodia": "https://flagcdn.com/h80/kh.png",
     "Brazil": "https://flagcdn.com/h80/br.png",
-    "Mexico": "https://flagcdn.com/h80/mx.png"
+    "Mexico": "https://flagcdn.com/h80/mx.png",
+    "Turkey": "https://flagcdn.com/h80/tr.png",
+    "Czech Republic": "https://flagcdn.com/h80/cz.png",
+    "Morocco": "https://flagcdn.com/h80/ma.png"
   }
 
-  const countryEntries = Object.entries(countries)
+  const countryEntries = Object.entries(country_flags)
 
   useEffect(() => {
     if (containerRef.current) {
