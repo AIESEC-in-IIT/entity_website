@@ -36,7 +36,7 @@ const CountryBanner = () => {
   return (
     <div className="w-full overflow-hidden bg-white py-4">
       <div
-        className="flex"
+        className="flex pb-2"
         ref={containerRef}
         style={{
           animation: `scroll ${duration}s linear infinite`,
@@ -69,6 +69,7 @@ const CountryBanner = () => {
         }
       `}</style>
     </div>
+    
   )
 }
 
