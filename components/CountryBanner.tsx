@@ -1,8 +1,11 @@
 'use client'
 
-import React, { use } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 const CountryBanner = () => {
+  const containerRef = useRef(null)
+  const [duration, setDuration] = useState(30) // default fallback duration
+
   const countries = {
     "India": "https://flagcdn.com/h80/in.png",
     "Nepal": "https://flagcdn.com/h80/np.png",
@@ -21,25 +24,28 @@ const CountryBanner = () => {
 
   const countryEntries = Object.entries(countries)
 
+  useEffect(() => {
+    if (containerRef.current) {
+      const containerWidth = containerRef.current.offsetWidth / 2 // because we duplicate
+      const speed = 100 // pixels per second
+      const newDuration = containerWidth / speed
+      setDuration(newDuration)
+    }
+  }, [])
+
   return (
     <div className="w-full overflow-hidden bg-white py-4">
-      <div className="flex animate-scroll">
-        {/* First set of flags */}
-        {countryEntries.map(([country, flagUrl]) => (
-          <div key={`first-${country}`} className="flex-shrink-0 mx-4">
-            <div className="flex flex-col items-center">
-              <img 
-                src={flagUrl} 
-                alt={`${country} flag`}
-                className="h-12 w-auto border border-gray-300 shadow-sm rounded"
-              />
-              <span className="text-xs mt-2 text-gray-700 font-medium">{country}</span>
-            </div>
-          </div>
-        ))}
-        {/* Duplicate set for seamless loop */}
-        {countryEntries.map(([country, flagUrl]) => (
-          <div key={`second-${country}`} className="flex-shrink-0 mx-4">
+      <div
+        className="flex"
+        ref={containerRef}
+        style={{
+          animation: `scroll ${duration}s linear infinite`,
+          width: 'fit-content',
+        }}
+      >
+        {/* First and second set for looping */}
+        {[...countryEntries, ...countryEntries].map(([country, flagUrl], idx) => (
+          <div key={`${country}-${idx}`} className="flex-shrink-0 mx-4">
             <div className="flex flex-col items-center">
               <img 
                 src={flagUrl} 
@@ -51,8 +57,7 @@ const CountryBanner = () => {
           </div>
         ))}
       </div>
-      
-      
+
       <style jsx>{`
         @keyframes scroll {
           0% {
@@ -61,10 +66,6 @@ const CountryBanner = () => {
           100% {
             transform: translateX(-50%);
           }
-        }
-        
-        .animate-scroll {
-          animation: scroll 30s linear infinite;
         }
       `}</style>
     </div>
