@@ -41,16 +41,16 @@ const Products = () => {
         </div>
         <div>
           <section className="px-4 py-10 bg-white">
-            <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
               {programs.map((program, index) => (
                 <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col text-center space-y-4 h-full">
-                  <div className="px-4 py-2 w-full flex justify-center">
+                  <div className="px-4 py-2 w-full flex justify-center rounded-xl shadow-lg transition-transform duration-300 ease-in-out hover:scale-105">
                     <Image
                       src={program.image}
                       alt={program.title}
                       width={220}
                       height={0}
-                      className="object-contain h-auto transition-transform duration-300 ease-in-out hover:scale-105"
+                      className="object-contain h-auto "
                     />
                   </div>
 

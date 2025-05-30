@@ -4,7 +4,6 @@ import { NAV_BAR_LINKS } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import Button from './Button'
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
@@ -57,7 +56,7 @@ const Navbar = () => {
               href={link.href}
               key={link.key}
               onClick={toggleSidebar}
-              className="text-lg text-black hover:font-black transition hover:text-aiesec-blue"
+              className="text-lg text-black transition-all hover:font-black hover:text-aiesec-blue"
             >
               {link.label}
             </Link>

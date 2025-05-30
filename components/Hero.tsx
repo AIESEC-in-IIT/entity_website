@@ -51,7 +51,7 @@ const Hero = () => {
         </div> */}
 
   <div className="absolute inset-0 flex items-center justify-center">
-    <div className="scale-wrapper text-aiesec-blue text-center hover:font-black">
+    <div className="scale-wrapper text-aiesec-blue text-center transition-transform duration-300 ease-in-out hover:scale-105">
       <h1
         className="pb-3 whitespace-nowrap text-[5vw] sm:text-[3vw] md:text-5xl"
         style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)' }}
@@ -69,9 +69,9 @@ const Hero = () => {
 
 
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-          <button className="group flex items-center gap-2 px-6 py-3 bg-white bg-opacity-90 rounded-xl shadow-md hover:bg-opacity-100 transition">
+          <button className="group flex items-center gap-2 px-6 py-3 bg-white bg-opacity-90 rounded-xl shadow-md hover:bg-opacity-100 transition-all hover:font-black hover:text-aiesec-blue">
             <Image src="/explore.svg" alt="Explore Icon" width={20} height={20} />
-            <span className="text-black font-medium group-hover:text-aiesec-blue transition-colors hover:font-black">Explore</span>
+            <span className="text-black font-medium ">Explore</span>
           </button>
         </div>
       </div>
