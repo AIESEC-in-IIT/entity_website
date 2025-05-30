@@ -8,3 +8,7 @@ export const NAV_BAR_LINKS = [
     { href: '/', key: 'about', label: 'About Us' },
     { href: '/', key: 'contact', label: 'Contact' },
 ];
+
+export const COUNTRY_FLAGS_SRC =[
+    
+];
