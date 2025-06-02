@@ -1,6 +1,6 @@
 'use client'
 
-import { NAV_BAR_OGV } from '@/constants'
+import { NAV_BAR_OGV } from '@/constants/NavBars'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
