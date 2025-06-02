@@ -24,51 +24,42 @@ const Hero = () => {
           priority
         />
         <div className="absolute inset-0 bg-black opacity-70"></div>
-        {/* <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-5xl">
-          <h1
-            style={{
-              textShadow: '0 0.15ch 15px #333333, 0 -2px 0 #f5f5f5',
-              // fontSize: '15vmin',
-              letterSpacing: '0.05ch', // Increased from -0.15ch
-              lineHeight: 0.75,
-              color: '#037ef3',
-              paddingBottom: '2.5rem',
-              fontFamily: 'Lato, sans-serif',
-            }}
-          >
-            AIESEC in
-          </h1>
-          <h1
-            style={{
-              textShadow: '0 0.15ch 15px #333333, 0 -2px 0 #f5f5f5',
-              // fontSize: '15vmin',
-              letterSpacing: '-0.1ch', // Increased from -0.15ch
-              lineHeight: 0.75,
-              color: '#037ef3',
-              fontFamily: 'Lato, sans-serif',
-            }}
-          >
-            Informatics Institute of Technology
-          </h1>
-        </div> */}
+        
 
-  <div className="absolute inset-0 flex items-center justify-center">
-    <div className="scale-wrapper text-aiesec-blue text-center transition-transform duration-300 ease-in-out hover:scale-105 bg-gradient-to-r items-center from-aiesec-blue via-teal-500 to-pink-500 bg-clip-text text-6xl font-extrabold text-transparent text-center select-auto">
-      <h1
-        className="pb-3 whitespace-nowrap text-[5vw] sm:text-[3vw] md:text-5xl"
-        style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)' }}
-      >
-        AIESEC in
-      </h1>
-      <h1
-        className="pb-3 whitespace-nowrap text-[5vw] sm:text-[3vw] md:text-5xl"
-        style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)' }}
-      >
-        Informatics Institute of Technology
-      </h1>
+```jsx
+<div className="absolute inset-0 flex items-center justify-center">
+    <div className="scale-wrapper text-center transition-transform duration-300 ease-in-out hover:scale-105">
+      <div className="relative flex flex-col items-center">
+        <span 
+          className="absolute top-0 left-0 w-full bg-gradient-to-r from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-[5vw] sm:text-[3vw] md:text-5xl font-extrabold text-transparent text-center select-none blur-xl z-0"
+          style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)' }}
+        >
+          AIESEC in
+        </span>
+        <h1
+          className="relative pb-3 whitespace-nowrap text-[5vw] sm:text-[3vw] md:text-5xl font-extrabold bg-gradient-to-r from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-transparent text-center select-auto z-10"
+          style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)' }}
+        >
+          AIESEC in
+        </h1>
+      </div>
+      <div className="relative flex flex-col items-center">
+        <span 
+          className="absolute top-0 left-0 w-full bg-gradient-to-r from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-[5vw] sm:text-[3vw] md:text-5xl font-extrabold text-transparent text-center select-none blur-xl z-0"
+          style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)' }}
+        >
+          Informatics Institute of Technology
+        </span>
+        <h1
+          className="relative pb-3 whitespace-nowrap text-[5vw] sm:text-[3vw] md:text-5xl font-extrabold bg-gradient-to-r from-blue-500 via-teal-500 to-pink-500 bg-clip-text text-transparent text-center select-auto z-10"
+          style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)' }}
+        >
+          Informatics Institute of Technology
+        </h1>
+      </div>
     </div>
-  </div>
-
+</div>
+```
 
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
           <button className="group flex items-center gap-2 px-6 py-3 bg-white bg-opacity-90 rounded-xl shadow-md hover:bg-opacity-100 transition-all hover:font-black hover:text-aiesec-blue">
