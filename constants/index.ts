@@ -12,7 +12,7 @@ export const NAV_BAR_LINKS = [
 
 export const NAV_BAR_OGV = [
     { href: '/', key: 'home', label: 'Home' },
-    { href: '/', key: 'projects', label: 'Volunteering Projects' },
+    { href: '/', key: 'projects', label: 'Projects' },
     { href: '/', key: 'countries', label: 'Countries' },
     { href: '/', key: 'requirements', label: 'Requirements' },
     // { href: '/', key: 'faqs', label: 'FAQs' },

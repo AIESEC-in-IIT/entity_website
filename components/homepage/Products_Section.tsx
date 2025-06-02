@@ -1,6 +1,7 @@
 import React from 'react'
 import { Lato } from 'next/font/google';
 import Image from 'next/image';
+import Link from 'next/link'
 
 
 
@@ -16,18 +17,21 @@ const programs = [
     image: '/product_GV-horizontal-color.png',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit, sed do eiu do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      link: '/ogv',
   },
   {
     title: 'Global Talent',
     image: '/product_GT-horizontal-color.png',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      link: '/ogt'
   },
   {
     title: 'Global Teacher',
     image: '/product_GTe-horizontal-color.png',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboconsectetur adipiscing elit, sed do eiuconsectetur adipiscing elit, sed do eiure et dolore magna aliqua.',
+      link: '/ogt'
   },
 ];
 
@@ -58,11 +62,12 @@ const Products = () => {
                     <p className=" text-gray-600 text-l">{program.description}</p>
                   </div>
 
-                  <div className='pt-4'>
-                                        
-                    <button className="w-full px-5 py-2 bg-aiesec-blue text-white rounded-md hover:bg-blue-700 transition-transform duration-300 ease-in-out hover:scale-105">
-                      Explore
-                    </button>
+                  <div className='pt-4'>                    
+                    <Link href={program.link}>
+                      <button className="w-full px-5 py-2 bg-aiesec-blue text-white rounded-md hover:bg-blue-700 transition-transform duration-300 ease-in-out hover:scale-105">
+                        Explore
+                      </button>
+                    </Link> 
                   </div>
                 </div>
               ))}
