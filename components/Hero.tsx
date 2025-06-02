@@ -15,13 +15,15 @@ const Hero = () => {
       
       <div className={`relative w-full min-h-screen-nav ${lato.className}`}>
         <Image
-          src="/hero_bg_1.jpg"
+          // src="/hero_bg_1.jpg"
+          // src="/hero_bgs/voyage24.jpg"
+          src="/hero_bgs/valentinesIGM.jpg"
           alt="hero_bg_1"
           fill
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-white opacity-50"></div>
+        <div className="absolute inset-0 bg-black opacity-70"></div>
         {/* <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-5xl">
           <h1
             style={{
