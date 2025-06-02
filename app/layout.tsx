@@ -3,9 +3,8 @@ import { Inter } from "next/font/google";
 import { Lato } from "next/font/google";
 import { Raleway } from "next/font/google";
 import type { Metadata } from "next";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import Navbar_Links from "@/components/Navbar_Links";
+import Navbar from "@/components/homepage/Navbar";
+import Footer from "@/components/homepage/Footer";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -33,10 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
-        {/* <Navbar_Links /> */}
         <main className="relative-overflow-hidden">{children}</main>
-        <Footer />
       </body>
     </html>
   );

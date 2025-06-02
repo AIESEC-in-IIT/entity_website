@@ -1,6 +1,6 @@
 'use client'
 
-import { NAV_BAR_LINKS } from '@/constants'
+import { NAV_BAR_OGV } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
@@ -20,7 +20,7 @@ const Navbar = () => {
 
       {/* Desktop Nav */}
       <ul className="hidden h-full gap-12 lg:flex pr-5 ">
-        {NAV_BAR_LINKS.map((link) => (
+        {NAV_BAR_OGV.map((link) => (
           <Link
             href={link.href}
             key={link.key}
@@ -51,7 +51,7 @@ const Navbar = () => {
           <button onClick={toggleSidebar} className="text-black text-xl">✕</button>
         </div>
         <ul className="flex flex-col gap-6 p-6">
-          {NAV_BAR_LINKS.map((link) => (
+          {NAV_BAR_OGV.map((link) => (
             <Link
               href={link.href}
               key={link.key}

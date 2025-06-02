@@ -59,6 +59,7 @@ const Products = () => {
                   </div>
 
                   <div className='pt-4'>
+                                        
                     <button className="w-full px-5 py-2 bg-aiesec-blue text-white rounded-md hover:bg-blue-700 transition-transform duration-300 ease-in-out hover:scale-105">
                       Explore
                     </button>
