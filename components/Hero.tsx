@@ -53,7 +53,7 @@ const Hero = () => {
         </div> */}
 
   <div className="absolute inset-0 flex items-center justify-center">
-    <div className="scale-wrapper text-aiesec-blue text-center transition-transform duration-300 ease-in-out hover:scale-105">
+    <div className="scale-wrapper text-aiesec-blue text-center transition-transform duration-300 ease-in-out hover:scale-105 bg-gradient-to-r items-center from-aiesec-blue via-teal-500 to-pink-500 bg-clip-text text-6xl font-extrabold text-transparent text-center select-auto">
       <h1
         className="pb-3 whitespace-nowrap text-[5vw] sm:text-[3vw] md:text-5xl"
         style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)' }}
