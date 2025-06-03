@@ -24,7 +24,7 @@ const Navbar = () => {
           <Link
             href={link.href}
             key={link.key}
-            className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-black hover:text-aiesec-blue"
+            className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-black hover:text-ogv-orange"
           >
             {link.label}
           </Link>
@@ -56,7 +56,7 @@ const Navbar = () => {
               href={link.href}
               key={link.key}
               onClick={toggleSidebar}
-              className="text-lg text-black transition-all hover:font-black hover:text-aiesec-blue"
+              className="text-lg text-black transition-all hover:font-black hover:text-ogv-orange"
             >
               {link.label}
             </Link>
