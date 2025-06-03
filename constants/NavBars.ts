@@ -8,7 +8,7 @@ export const NAV_BAR_LINKS = [
 ];
 
 export const NAV_BAR_OGV = [
-    { href: '/', key: 'home', label: 'Home' },
+    { href: '/ogv', key: 'home', label: 'Home' },
     { href: '/ogv/volunteering_projects', key: 'projects', label: 'Projects' },
     { href: '/', key: 'countries', label: 'Countries' },
     { href: '/', key: 'requirements', label: 'Requirements' },

@@ -166,3 +166,12 @@ body {
     transform: rotate(0.5deg);
   }
 }
+
+/* Add this in index.css or global styles */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
