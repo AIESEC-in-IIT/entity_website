@@ -1,39 +1,8 @@
 import React from 'react'
-import { Lato } from 'next/font/google';
 import Image from 'next/image';
 import Link from 'next/link'
-
-
-
-const lato = Lato({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  display: 'swap',
-});
-
-const programs = [
-  {
-    title: 'Global Volunteer',
-    image: '/product_GV-horizontal-color.png',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, consectetur adipiscing elit, sed do eiu do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      link: '/ogv',
-  },
-  {
-    title: 'Global Talent',
-    image: '/product_GT-horizontal-color.png',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      link: '/ogt'
-  },
-  {
-    title: 'Global Teacher',
-    image: '/product_GTe-horizontal-color.png',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboconsectetur adipiscing elit, sed do eiuconsectetur adipiscing elit, sed do eiure et dolore magna aliqua.',
-      link: '/ogt'
-  },
-];
+import { products } from '@/constants/products';
+import { lato } from '@/constants/font_settings';
 
 const Products = () => {
   return (
@@ -46,7 +15,7 @@ const Products = () => {
         <div>
           <section className="px-4 py-10 bg-white">
             <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-              {programs.map((program, index) => (
+              {products.map((program, index) => (
                 <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col text-center space-y-4 h-full">
                   <div className="px-4 py-2 w-full flex justify-center rounded-xl shadow-lg transition-transform duration-300 ease-in-out hover:scale-105">
                     <Image
