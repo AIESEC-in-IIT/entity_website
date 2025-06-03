@@ -40,7 +40,11 @@ const Sample_Projects_OGV = () => {
                     </Link> 
                 </div>
             </div>
+            
+            <hr className="border-grey" />
+            
         </div>
+        
     )
 }
 

@@ -7,7 +7,7 @@ export const lato = Lato({
   display: 'swap',
 });
 
-export const raleway = Lato({
+export const raleway = Raleway({
   subsets: ['latin'],
   weight: ['400', '700'],
   display: 'swap',

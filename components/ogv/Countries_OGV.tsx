@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { countries } from '@/constants/countries';
+import { lato, raleway } from '@/constants/font_settings';
 
 const Countries_OGV = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -25,9 +26,9 @@ const Countries_OGV = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-white from-blue-50 to-indigo-100">
       {/* Header */}
-      <div className="flex justify-center py-8">
+      <div className={`${lato.className} flex justify-center py-8`}>
         <h1 className="text-5xl font-bold text-gray-800 tracking-wide">Countries</h1>
       </div>
 
@@ -41,7 +42,7 @@ const Countries_OGV = () => {
             className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white shadow-lg rounded-full p-3 transition-all duration-200 hover:scale-110 group"
             aria-label="Previous country"
           >
-            <ChevronLeft className="w-6 h-6 text-gray-700 group-hover:text-blue-600" />
+            <ChevronLeft className="w-6 h-6 text-gray-700 group-hover:text-aiesec-blue" />
           </button>
 
           {/* Right Arrow */}
@@ -50,14 +51,14 @@ const Countries_OGV = () => {
             className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/90 hover:bg-white shadow-lg rounded-full p-3 transition-all duration-200 hover:scale-110 group"
             aria-label="Next country"
           >
-            <ChevronRight className="w-6 h-6 text-gray-700 group-hover:text-blue-600" />
+            <ChevronRight className="w-6 h-6 text-gray-700 group-hover:text-aiesec-blue" />
           </button>
 
           {/* Country Card */}
           <div className="mx-16 bg-white rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-500 hover:scale-[1.02]">
             <div className="relative">
-              {/* Flag Image */}
-              <div className="h-64 bg-gray-100 flex items-center justify-center overflow-hidden">
+              {/* Image */}
+              <div className="h-80 bg-gray-100 flex items-center justify-center overflow-hidden">
                 <img
                   src={countries[currentIndex].flag}
                   alt={`${countries[currentIndex].name} flag`}
@@ -76,15 +77,15 @@ const Countries_OGV = () => {
               </div>
             </div>
 
-            {/* Country Info */}
-            <div className="p-6">
+            {/* Country Quote */}
+            <div className="pt-3">
               <div className="text-center">
                 <p className="text-gray-600 text-lg mb-4">
-                  Country Code: <span className="font-semibold text-blue-600">{countries[currentIndex].code}</span>
+                  <span className={`${raleway.className} text-black`}>{countries[currentIndex].quote}</span>
                 </p>
-                <div className="text-sm text-gray-500">
+                {/* <div className="text-sm text-gray-500">
                   {currentIndex + 1} of {countries.length} countries
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -99,7 +100,7 @@ const Countries_OGV = () => {
             onClick={() => goToSlide(index)}
             className={`w-3 h-3 rounded-full transition-all duration-200 ${
               index === currentIndex 
-                ? 'bg-blue-600 scale-125' 
+                ? 'bg-ogv-orange scale-125' 
                 : 'bg-gray-300 hover:bg-gray-400'
             }`}
             aria-label={`Go to ${countries[index].name}`}
@@ -108,14 +109,14 @@ const Countries_OGV = () => {
       </div>
 
       {/* Progress Bar */}
-      <div className="mx-auto max-w-md px-4 pb-8">
+      {/* <div className="mx-auto max-w-md px-4 pb-8">
         <div className="bg-gray-200 rounded-full h-1 overflow-hidden">
           <div 
             className="bg-blue-600 h-full transition-all duration-500 ease-out"
             style={{ width: `${((currentIndex + 1) / countries.length) * 100}%` }}
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
