@@ -27,7 +27,7 @@ const Hero = () => {
         <div className="absolute inset-0 flex items-center justify-center">
             <div className="scale-wrapper text-center transition-transform duration-300 ease-in-out hover:scale-105">
               <div className="relative flex flex-col items-center">
-                <span 
+                {/* <span 
                   className="absolute top-0 left-0 w-full bg-gradient-to-r from-aiesec-blue to-ogv-orange bg-clip-text text-[5vw] sm:text-[3vw] md:text-5xl font-extrabold text-transparent text-center select-none blur-xl z-0"
                   style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)' }}
                 >
@@ -38,7 +38,8 @@ const Hero = () => {
                   style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)' }}
                 >
                   Volunteer...
-                </h1>
+                </h1> */}
+                <Image src="/ogv/volunteer_text.png" width={800} height={150} alt='volunteer'/>
               </div>
               
             </div>

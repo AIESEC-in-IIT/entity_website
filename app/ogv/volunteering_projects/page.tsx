@@ -19,6 +19,8 @@ export default function Home() {
           ))}
         </div>
       </div>
+      <hr className="border-grey-blue pb-2" />
+      <Countries_OGV />
       <Footer />
     </>
   );

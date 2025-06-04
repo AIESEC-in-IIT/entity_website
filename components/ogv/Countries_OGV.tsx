@@ -107,16 +107,6 @@ const Countries_OGV = () => {
           />
         ))}
       </div>
-
-      {/* Progress Bar */}
-      {/* <div className="mx-auto max-w-md px-4 pb-8">
-        <div className="bg-gray-200 rounded-full h-1 overflow-hidden">
-          <div 
-            className="bg-blue-600 h-full transition-all duration-500 ease-out"
-            style={{ width: `${((currentIndex + 1) / countries.length) * 100}%` }}
-          />
-        </div>
-      </div> */}
     </div>
   );
 };
