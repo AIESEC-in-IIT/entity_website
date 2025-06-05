@@ -6,6 +6,7 @@ import Countries_OGV from "@/components/ogv/Countries_OGV";
 import Footer from "@/components/homepage/Footer";
 import Benefits from "@/components/ogv/Benefits";
 import Requirements from "@/components/ogv/Requirements";
+import CountryBanner from "@/components/common/CountryBanner";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <Countries_OGV />
       <Benefits />
       <Requirements />
+      <CountryBanner />
       <Footer />
     </>
   );

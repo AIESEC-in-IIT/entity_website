@@ -17,6 +17,7 @@ export default function Home() {
       <Countries_OGV />
       <Benefits />
       <Requirements />
+      <CountryBanner />
       <Footer />
     </>
   );
