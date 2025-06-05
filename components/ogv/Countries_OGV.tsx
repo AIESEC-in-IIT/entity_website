@@ -26,10 +26,10 @@ const Countries_OGV = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white from-blue-50 to-indigo-100">
+    <div className=" bg-white from-blue-50 to-indigo-100">
       {/* Header */}
       <div className={`${lato.className} flex justify-center py-8`}>
-        <h1 className="text-5xl font-bold text-gray-800 tracking-wide">Countries</h1>
+        <h1 className="text-5xl font-bold text-black tracking-wide">Countries</h1>
       </div>
 
       {/* Main Gallery Container */}
@@ -110,6 +110,7 @@ const Countries_OGV = () => {
           />
         ))}
       </div>
+        <hr className="border-aiesec-light-grey pb-2" />
     </div>
   );
 };

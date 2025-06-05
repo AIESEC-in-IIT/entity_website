@@ -5,6 +5,7 @@ import Navbar from "@/components/ogv/Navbar_OGV";
 import Sample_Projects_OGV from "@/components/ogv/Sample_Projects_OGV";
 import Countries_OGV from "@/components/ogv/Countries_OGV";
 import Footer from "@/components/homepage/Footer";
+import Benefits from "@/components/ogv/Benefits";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <Sample_Projects_OGV />
       <Countries_OGV />
+      <Benefits />
       <Footer />
     </>
   );

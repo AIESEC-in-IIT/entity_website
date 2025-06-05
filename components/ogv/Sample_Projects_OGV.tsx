@@ -14,10 +14,10 @@ const Sample_Projects_OGV = () => {
                 </div>
                 
                 <div>
-                    <section className="px-4 py-10 bg-white">
-                        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+                    <section className="px-4 py-10 bg-white ">
+                        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 ">
                             {Sample_OGV_Projects.map((program, index) => (
-                                <div key={index} className="bg-white rounded-xl shadow-lg p-4 flex flex-col h-full">
+                                <div key={index} className="bg-white rounded-xl  p-4 flex flex-col h-full shadow-md hover:shadow-lg transition-shadow duration-300">
                                     <Image
                                         src={program.image}
                                         alt={program.title}

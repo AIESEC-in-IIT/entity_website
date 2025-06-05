@@ -7,7 +7,6 @@ import { lato } from '@/constants/font_settings';
 const Products = () => {
   return (
     <div>
-      {/* <hr className="border-aiesec-blue pb-2" /> */}
       <div className={`${lato.className}`}>
         <div className={`flex justify-center`}>
           <h1 className={`font-bold text-4xl pt-5`}>Our Products</h1>          

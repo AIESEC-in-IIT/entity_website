@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function ProjectCard({ title, image, sdg_image, description, link }) {
   return (
-    <div className="bg-white rounded-2xl shadow-md overflow-hidden max-w-3xl mx-auto mb-6">
+    <div className="bg-white rounded-2xl  overflow-hidden max-w-3xl mx-auto mb-6 shadow-md hover:shadow-lg transition-shadow duration-300">
       <div className="w-full">
         <Image
           src={image}
