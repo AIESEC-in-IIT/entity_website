@@ -28,7 +28,7 @@ const Countries_OGV = () => {
   return (
     <div className=" bg-white from-blue-50 to-indigo-100">
       {/* Header */}
-      <div className={`${lato.className} flex justify-center py-8`}>
+      <div className={`${lato.className} flex justify-center py-6`}>
         <h1 className="text-5xl font-bold text-black tracking-wide">Countries</h1>
       </div>
 

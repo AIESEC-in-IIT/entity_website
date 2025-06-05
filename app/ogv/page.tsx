@@ -6,6 +6,7 @@ import Sample_Projects_OGV from "@/components/ogv/Sample_Projects_OGV";
 import Countries_OGV from "@/components/ogv/Countries_OGV";
 import Footer from "@/components/homepage/Footer";
 import Benefits from "@/components/ogv/Benefits";
+import Requirements from "@/components/ogv/Requirements";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Sample_Projects_OGV />
       <Countries_OGV />
       <Benefits />
+      <Requirements />
       <Footer />
     </>
   );

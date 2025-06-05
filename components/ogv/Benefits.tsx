@@ -7,8 +7,8 @@ import Image from 'next/image'
 const Benefits = () => {
   return (
     <div>
-        <div className={`${lato.className} py-8 text-5xl font-bold`}>
-            <h1 className={`flex justify-center tracking-wide`}>Benefits</h1>
+        <div className={`${lato.className} py-6 text-5xl font-bold`}>
+            <h1 className={`flex justify-center tracking-wide`}>Why Volunteer?</h1>
         </div>
         <div>
             <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-6 py-12 bg-white`}>
@@ -29,6 +29,7 @@ const Benefits = () => {
                 ) )}
             </div>
         </div>
+        <hr className="border-aiesec-light-grey pb-2" />
     </div>
   )
 }

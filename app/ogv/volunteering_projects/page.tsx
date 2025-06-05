@@ -5,6 +5,7 @@ import { lato } from "@/constants/font_settings";
 import Countries_OGV from "@/components/ogv/Countries_OGV";
 import Footer from "@/components/homepage/Footer";
 import Benefits from "@/components/ogv/Benefits";
+import Requirements from "@/components/ogv/Requirements";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <hr className="border-grey-blue pb-2" />
       <Countries_OGV />
       <Benefits />
+      <Requirements />
       <Footer />
     </>
   );
