@@ -83,6 +83,9 @@ const Countries_OGV = () => {
                 <p className="text-gray-600 text-lg mb-4">
                   <span className={`${raleway.className} text-black`}>{countries[currentIndex].quote}</span>
                 </p>
+                <p className={`pb-5 text-xs`}>
+                  <span className={`${lato.className} text-aiesec-dark-grey`}>Estimated Budget : {countries[currentIndex].budget}</span>
+                </p>
                 {/* <div className="text-sm text-gray-500">
                   {currentIndex + 1} of {countries.length} countries
                 </div> */}
