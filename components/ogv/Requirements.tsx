@@ -3,7 +3,6 @@ import { lato } from '@/constants/font_settings'
 import { raleway } from '@/constants/font_settings'
 import Image from 'next/image'
 import { GV_Requirement } from '@/constants/ogv/requirements'
-import { text } from 'stream/consumers'
 
 const Requirements = () => {
   return (

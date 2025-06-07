@@ -18,8 +18,8 @@ export default function Home() {
       <Countries_OGV />
       <Benefits />
       <Requirements />
-      <CountryBanner />
       <Contact />
+      <CountryBanner />
       <Footer />
     </>
   );
