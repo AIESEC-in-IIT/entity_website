@@ -2,7 +2,7 @@ export const NAV_BAR_LINKS = [
     { href: '/', key: 'home', label: 'Home' },
     { href: '/ogv', key: 'ogv', label: 'Global Volunteer' },
     { href: '/', key: 'ogt', label: 'Global Talent & Teacher' },
-    { href: '/', key: 'events', label: 'Events' },
+    // { href: '/', key: 'events', label: 'Events' },
     { href: '/', key: 'about', label: 'About Us' },
     { href: '/', key: 'contact', label: 'Contact' },
 ];

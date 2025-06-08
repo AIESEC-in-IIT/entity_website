@@ -3,7 +3,7 @@ import ProjectCard from "@/components/ogv/ProjectCard";
 import { OGV_Projects } from "@/constants/ogv_data";
 import { lato } from "@/constants/font_settings";
 import Countries_OGV from "@/components/ogv/Countries_OGV";
-import Footer from "@/components/homepage/Footer";
+import Footer from "@/components/common/Footer";
 import Benefits from "@/components/ogv/Benefits";
 import Requirements from "@/components/ogv/Requirements";
 import CountryBanner from "@/components/common/CountryBanner";
