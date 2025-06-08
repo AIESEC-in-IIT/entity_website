@@ -14,11 +14,19 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
-      <Sample_Projects_OGV />
-      <Countries_OGV />
+      <div id="ogv_sample_projects">
+        <Sample_Projects_OGV />
+      </div>
+      <div id="ogv_countries">
+        <Countries_OGV />
+      </div>
       <Benefits />
-      <Requirements />
-      <Contact />
+      <div id="ogv_requirements">
+        <Requirements />
+      </div>
+      <div id="ogv_contact">
+        <Contact />
+      </div>
       <CountryBanner />
       <Footer />
     </>

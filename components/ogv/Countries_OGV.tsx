@@ -87,7 +87,7 @@ const Countries_OGV = () => {
                   <span className={`${lato.className} text-aiesec-dark-grey`}>Estimated Budget : {countries[currentIndex].budget}</span>
                 </p>
                 <p className={`pb-5 text-xs`}>
-                  <span className={`${raleway.className} text-gray-500`}>*Budgets may change due to many factors. Please contact our TL's to get a better idea.</span>
+                  <span className={`${raleway.className} text-gray-500`}>*Budgets may change. Please contact our TL's to get a better idea.</span>
                 </p>
                 {/* <div className="text-sm text-gray-500">
                   {currentIndex + 1} of {countries.length} countries

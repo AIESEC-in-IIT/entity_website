@@ -10,8 +10,8 @@ export const NAV_BAR_LINKS = [
 export const NAV_BAR_OGV = [
     { href: '/ogv', key: 'home', label: 'Home' },
     { href: '/ogv/volunteering_projects', key: 'projects', label: 'Projects' },
-    { href: '/', key: 'countries', label: 'Countries' },
-    { href: '/', key: 'requirements', label: 'Requirements' },
+    { href: '#ogv_countries', key: 'countries', label: 'Countries' },
+    { href: '#ogv_requirements', key: 'requirements', label: 'Requirements' },
     // { href: '/', key: 'faqs', label: 'FAQs' },
-    { href: '/', key: 'contact', label: 'Contact' },
+    { href: '#ogv_contact', key: 'contact', label: 'Contact' },
 ];
